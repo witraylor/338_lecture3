@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Wanderlines — Lecture 2 Starter</title>
+  <!-- Link the reset and style .css files -->
+   <link rel="stylesheet" href="css/reset.css">
+   <link rel="stylesheet" href="css/style.css">
+
+<!-- 
+   1. Make nav sticky
+   2. Change minmax values
+   3. Change lines 131, 134, and 116 and pick new color scheme
+   -->
+</head>
+<body>
+
+  <!-- ============================================================
+       LARGE STICKY HEADER
+       Required: must remain visible while the user scrolls.
+       ============================================================ -->
+  <header>
+    <div class="brand">
+      <h1>Wanderlines</h1>
+      <p class="tagline">A travel blog about how you get there.</p>
+    </div>
+    <nav>
+      <a href="#gallery-grid">Grid Gallery</a>
+      <a href="#gallery-flex">Flex Gallery</a>
+      <a href="#about">About</a>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- ============================================================
+         SECTION 1 — Photo gallery, styled with display: grid + minmax()
+         At least 10 cards. Each card = image + heading + description.
+         ============================================================ -->
+    <section id="grid-gallery">
+      <header>
+        <h2>Ireland — Grid Gallery</h2>
+        <p>Style this <code>.grid</code> with <strong>display: grid</strong> and
+        <code>repeat(auto-fill, minmax(220px, 1fr))</code> in styles.css.</p>
+      </header>
+
+      <div class="grid">
+        <figure>
+          <img class="mask1" src="images/alfajores-in-bakery-display.jpg"
+               alt="Alfajores in a bakery display case">
+          <figcaption>A bakery display case</figcaption>
+        </figure>
+
+        <figure>
+          <img src="images/custom_house.jpg`"
+               alt="The facade of the Custom House in Dublin">
+          <figcaption>The Customs House</figcaption>
+        </figure>
+
+        <figure>
+          <img src="images/First_apartment.JPG"
+               alt="A block of the brick apartments in Dublin">
+          <figcaption>The First Apartments</figcaption>
+        </figure>
+
+        <figure>
+          <img class="mask2" src="images/flour_mill_(2).jpg"
+               alt="A stone building with 'Boland Flour Mills' painted on its facade">
+          <figcaption>The Boland Flour Mill</figcaption>
+        </figure>
+
+        <figure>
+          <img src="images/Google_mass_gentrification.jpg"
+               alt="A small walkway running through the Google office buildings">
+          <figcaption>The Google Building</figcaption>
+        </figure>
+
+        <figure>
+          <img src="images/narrow-stairway-on-double-decker-bus.jpg"
+               alt="A narrow stairway on a double decker bus">
+          <figcaption>The Stairs of a Double Decker Bus</figcaption>
+        </figure>
+
+        <figure>
+          <img src="images/samuel-beckett-bridge.JPG"
+               alt="A modern, white bridge with buildings in the background">
+          <figcaption>The Samuel Beckett Bridge</figcaption>
+        </figure>
+
+        <figure>
+          <img src="images/sunset.jpg"
+               alt="The sun setting over the coast of Ireland">
+          <figcaption>The Coast</figcaption>
+        </figure>
+
+        <figure>
+          <img src="images/Trinity_college_pavillion.jpg"
+               alt="People walking down the Trinity College Pavillion">
+          <figcaption>Trinity College</figcaption>
+        </figure>
+
+        <figure>
+          <img src="images/walking_tour_start_at_customs_house.JPG"
+               alt="A group of people posing in front of the Custom House">
+          <figcaption>Walking Tour of Dublin</figcaption>
+        </figure>
+
+        <figure>
+          <img src="images/tasnimah mia willow in class.JPG"
+               alt="Three students smiling in a classroom with another student in the background">
+          <figcaption>In Class</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         SECTION 2 — Photo gallery, styled with display: flex
+         At least 10 cards. Same content shape; different layout.
+         ============================================================ -->
+    <section id="flex-gallery">
+      <header>
+        <h2>Food & Drink — Flex Gallery</h2>
+        <p>Style this <code>.flex</code> with <strong>display: flex</strong>,
+        <code>flex-wrap: wrap</code>, and <code>flex: 1 0 250px; </code> on the figures.</p>
+      </header>
+
+      <div class="flex">
+        <figure>
+          <img src="https://picsum.photos/seed/breakfast/640/420"
+               alt="Snow capped trees">
+          <figcaption>Snow capped trees</figcaption>
+        </figure>
+
+        <figure>
+          <img src="https://picsum.photos/seed/pub/640/420"
+               alt="REPLACE: specific description">
+          <figcaption>Pub in Temple Bar</figcaption>
+        </figure>
+
+        <figure>
+          <img src="https://picsum.photos/seed/seafood/640/420"
+               alt="REPLACE: specific description">
+          <figcaption>Seafood chowder</figcaption>
+        </figure>
+
+        <figure>
+          <img src="https://picsum.photos/seed/scones/640/420"
+               alt="REPLACE: specific description">
+          <figcaption>Cream tea</figcaption>
+        </figure>
+
+        <figure>
+          <img src="https://picsum.photos/seed/whiskey/640/420"
+               alt="REPLACE: specific description">
+          <figcaption>Distillery tour</figcaption>
+        </figure>
+
+        <figure>
+          <img src="https://picsum.photos/seed/coffee/640/420"
+               alt="REPLACE: specific description">
+          <figcaption>Morning coffee</figcaption>
+        </figure>
+
+        <figure>
+          <img src="https://picsum.photos/seed/farmers/640/420"
+               alt="REPLACE: specific description">
+          <figcaption>Farmers market</figcaption>
+        </figure>
+
+        <figure>
+          <img src="https://picsum.photos/seed/cheese/640/420"
+               alt="REPLACE: specific description">
+          <figcaption>Local cheese plate</figcaption>
+        </figure>
+
+        <figure>
+          <img src="https://picsum.photos/seed/stew/640/420"
+               alt="REPLACE: specific description">
+          <figcaption>Beef and Guinness stew</figcaption>
+        </figure>
+
+        <figure>
+          <img src="https://picsum.photos/seed/bread/640/420"
+               alt="REPLACE: specific description">
+          <figcaption>Soda bread</figcaption>
+        </figure>
+
+        <figure>
+          <img src="https://picsum.photos/seed/dessert/640/420"
+               alt="REPLACE: specific description">
+          <figcaption>Apple tart</figcaption>
+        </figure>
+
+        <figure>
+          <img src="https://picsum.photos/seed/pint/640/420"
+               alt="REPLACE: specific description">
+          <figcaption>The perfect pint</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section id="about">
+      <h2>About this site</h2>
+      <p>This is a class assignment. Replace this paragraph with a short blurb
+      about your trip and what kind of accessibility considerations you put into
+      the design.</p>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Colleen van Lent; Built for Accessible Web Design Lecture 2</p>
+  </footer>
+
+</body>
+</html>
